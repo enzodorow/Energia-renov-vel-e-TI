@@ -1,0 +1,204 @@
+/* ESTILO GERAL */
+
+body {
+  font-family: 'Verdana', sans-serif;
+  background-color: #CCEA8D;   /* verde pastel */
+  color: #01415B;              /* azul petróleo */
+  margin: 0;
+  padding: 0;
+}
+
+/* IMAGEM CABEÇALHO */
+.cabecalho-imagem {
+       background-image: url('painel.jpg'); 
+       background-size: cover; 
+       background-position: center; 
+       color: white; 
+       text-align: center; 
+       padding-top: 50px; 
+}
+
+.cabecalho-imagem h1 {
+  display: inline-block;
+  padding: 16px 32px; /* antes 1rem 2rem */
+  background-color: rgba(1, 65, 91, 0.7); /* azul petróleo transparente */
+  border: 2px solid #A6BC09;             /* verde limão */
+  border-radius: 8px; /* antes 0.5rem */
+  color: #CCEA8D;
+}
+
+/* NAVBAR */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px; /* antes 1rem 2rem */
+  background-color: #005148;   /* verde escuro */
+}
+
+.navbar .nav-link {
+  color: white;
+  text-decoration: none;
+  margin-left: 16px; /* antes 1rem */
+  transition: 0.2s;
+}
+
+.navbar .nav-link:hover {
+  color: #A6BC09; /* verde limão */
+}
+
+.navbar .active {
+  font-weight: bold;
+}
+
+.navbar-brand {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar-brand:hover {
+  color: #CCEA8D;
+}
+
+/* BOTÕES PERSONALIZADOS */
+
+.btn {
+  display: inline-block;
+  padding: 8px 16px; /* antes 0.5rem 1rem */
+  font-weight: bold;
+  border-radius: 4px; /* antes 0.25rem */
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid #01415B;
+  background-color: #A6BC09;  /* verde limão */
+  color: #01415B;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background-color: #01415B;  /* azul petróleo */
+  color: #CCEA8D;             /* verde pastel */
+  border-color: #A6BC09;
+}
+
+.btn-outline-secondary {
+  background-color: transparent;
+  border: 2px solid #019587;  /* verde água */
+  color: #019587;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #019587;
+  color: white;
+}
+
+/* CARDS */
+
+.card {
+  border: 2px solid #005148;  /* verde escuro */
+  background-color: white;
+  border-radius: 8px; /* antes 0.5rem */
+  overflow: hidden;
+  margin-bottom: 32px; /* antes 2rem */
+  transition: 0.2s ease-in-out;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.card-body {
+  padding: 16px; /* antes 1rem */
+}
+
+.card-title {
+  font-weight: bold;
+  margin-bottom: 8px; /* antes 0.5rem */
+  color: #01415B; /* azul petróleo */
+}
+
+.card-text {
+  margin-bottom: 16px; /* antes 1rem */
+  color: #005148; /* verde escuro */
+}
+
+.card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 12px #019587; /* verde água */
+}
+
+/* FORMULÁRIOS */
+
+.form-control,
+.form-select {
+  width: 100%;
+  padding: 8px; /* antes 0.5rem */
+  margin-bottom: 16px; /* antes 1rem */
+  border: 2px solid #019587; /* verde água */
+  border-radius: 4px; /* antes 0.25rem */
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #A6BC09;     /* verde limão */
+  box-shadow: 0 0 5px #A6BC09;
+  outline: none;
+}
+
+/* TÍTULOS */
+
+legend,
+h1, h2, h3, h4 {
+  color: #01415B;
+}
+
+/* RODAPÉ */
+
+footer {
+  text-align: center;
+  padding: 16px 0; /* antes 1rem */
+  background-color: #01415B; /* azul petróleo */
+  color: #CCEA8D;            /* verde pastel */
+}
+
+footer a {
+  color: #A6BC09; /* verde limão */
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #CCEA8D;
+}
+
+/* LINKS */
+
+a {
+  color: #019587; /* verde água */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #01415B;
+}
+
+/* BLOCO DE CITAÇÃO (FAQ) */
+
+blockquote {
+  border-left: 4px solid #A6BC09;
+  padding-left: 16px; /* antes 1rem */
+  margin: 16px 0;     /* antes 1rem */
+  font-style: italic;
+  color: #01415B;
+}
+
+/* IFAMES DE VÍDEO */
+
+.ratio iframe {
+  border: 2px solid #005148; /* verde escuro */
+  border-radius: 4px; /* antes 0.25rem */
+}
+
