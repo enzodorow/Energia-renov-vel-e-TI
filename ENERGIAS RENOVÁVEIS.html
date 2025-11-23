@@ -8,6 +8,41 @@
    <link rel="icon" href="favicon-32x32.png" type="image/x-icon">
    <link rel="stylesheet" href="style.css">
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+   <script>
+// A função 'onload' garante que o script só roda após o DOM estar pronto.
+window.onload = function() {
+    
+    // Usa 'prompt' para pedir o nome ao usuário
+    let nome = prompt("Bem-vindo(a)! Digite seu nome, por favor:");
+    const tituloBase = "Energia Renovável & TI";
+    
+    // Variável que armazena o título principal (h1 dentro do header)
+    const tituloElemento = document.querySelector('header h1');
+    
+    // Verifica se o usuário digitou algo (se 'nome' não for vazio, null, ou undefined)
+    if (nome) { 
+        // Verifica se o elemento do título foi encontrado (DOM)
+        if (tituloElemento) {
+            // Concatena a string de boas-vindas com o nome (como você fez com strings)
+            let tituloPersonalizado = "Olá, " + nome + "! " + tituloBase;
+            
+            // Atribui a nova string ao conteúdo de texto do elemento (DOM)
+            tituloElemento.textContent = tituloPersonalizado;
+        }
+    } else {
+        // Se o usuário não digitou um nome, apenas define o título base
+        if (tituloElemento) {
+            tituloElemento.textContent = tituloBase;
+        }
+    }
+    
+    // Mostra o resultado da concatenação no console
+    let mensagemConsole = "A página foi personalizada para: " + tituloElemento.textContent;
+    console.log(mensagemConsole);
+  }
+</script>
+
 </head>
 
 <body>
@@ -149,3 +184,4 @@
 
 </body>
 </html>
+
